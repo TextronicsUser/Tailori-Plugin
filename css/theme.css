@@ -1,0 +1,150 @@
+:root{
+    --modelBgGrey: #f5f4f3; /*#cecece;*/
+    --rightBg:#fff;
+    --fonts-sans: 'Nunito', ui-sans-serif,system-ui,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    --brandColor:#474444;
+    --outline:#d9d9d9;
+    --textWhite:#fff;
+ }
+ #theme_A, #theme_B, #tds,#theme_C{
+     position: absolute;
+     left: 0;
+     top: 0;
+     overflow: hidden;
+     font-family: var(--fonts-sans);
+     width: 100%;
+     display: flex;
+ }
+ #theme_A .configColumn  , #theme_B .configColumn, #tds .configColumn, #theme_C .configColumn{   
+     max-width: 700px;
+     width: 700px;
+     background: #fff;
+     border-left: 1px solid #f1f1f1;
+     position: relative;
+     top: 0;
+     right: 0;
+     z-index: 9;
+ }
+ #theme_A #modelDiv, #theme_B #modelDiv, #tds #modelDiv, #theme_C #modelDiv{
+     background-color: var(--modelBgGrey);
+     position: relative;
+     z-index: 9;
+     flex-grow: 1;
+ }
+ #theme_A .fabrics_style ,#theme_A .style_panel , #theme_A .monogram , #theme_C .monogram {
+     height: calc(100% - 5rem);
+ }
+ #theme_B .fabrics_style ,#theme_B .style_panel ,#theme_B .monogram, #theme_C .monogram{
+     height: calc(100% - 5rem);
+ }
+ #theme_A .icon_filter, #theme_B .icon_filter, #theme_C .icon_filter{
+     background-color: var(--brandColor);
+     color: var(--textWhite);
+ }
+ #theme_A .glyphicon, #theme_B .glyphicon, #theme_C .glyphicon{
+     display: none;
+ }
+ .rounded .image_box, .rounded button, .rounded , .rounded *{
+ border-radius: 1rem;
+ }
+ @media only screen and (max-width: 768px) {
+     #theme_A .fabrics_style, #theme_A .style_panel, #theme_A .monogram{
+         top:0;
+         height: 100%;
+         width: 100%;
+         padding: 0;
+     }
+     #theme_B .fabrics_style, #theme_B .style_panel, #theme_B .monogram{
+         top:0;
+         height: 100%;
+         width: 100%;
+         padding: 0;
+     }
+ }
+ 
+ /* iPads (landscape) ----------- */
+ @media only screen 
+ and (min-device-width : 768px) 
+ and (max-device-width : 1024px) 
+ and (orientation : landscape)  {
+     #theme_A #modelDiv, #theme_B #modelDiv, #theme_C #modelDiv{        
+         margin-right:40%;
+     }
+ 
+     #theme_A .configColumn, #theme_B .configColumn, #theme_C .configColumn { 
+     width: 40%;   
+ }
+ }
+ /* iPads (portrait) ----------- */
+ @media only screen 
+ and (min-device-width : 768px) 
+ and (max-device-width : 1024px) 
+ and (orientation : portrait) {
+     #theme_A #modelDiv, #theme_B #modelDiv {        
+         width: 100%;
+     }
+ 
+     #theme_A .configColumn, #theme_B .configColumn{ 
+         width: 100%;
+         max-width: 100%;
+     }
+ }
+ #theme_A #sidebarPrimary, #theme_A #sidebarSecondary{
+     width: 100%;
+ }
+ #sidebarPrimary.themeB > ul > li.navButton{
+     height: auto;
+     margin-bottom: 0;
+     padding: 1.5rem 0rem;
+     -moz-transition: all 300ms ease-in-out;
+     -ms-transition: all 300ms ease-in-out;
+     -o-transition: all 300ms ease-in-out;
+     transition: all 300ms ease-in-out;
+ }
+ #sidebarPrimary.themeB  > ul > li.navButton > a:hover{
+     text-decoration: none;
+     margin-bottom: 0;
+     border: none;
+  
+ }
+ 
+ @media only screen and (max-width: 768px){
+     #theme_A, #theme_B, #tds,#theme_C{
+         display: block;
+     }
+ }
+ /* different desktops */
+ @media only screen and (min-width: 992px)  {
+     #theme_A, #theme_B, #tds,#theme_C{
+         flex-direction: row;
+        
+     }
+     #theme_A .configColumn  , #theme_B .configColumn, #tds .configColumn, #theme_C .configColumn{
+         max-width: 560px;
+         width: 560px;
+     }
+     #theme_A #sidebarPrimary, #theme_A #sidebarSecondary{
+        width: 100%;
+    }
+ }
+ @media screen and (min-width: 1400px) {
+     #theme_A, #theme_B, #tds,#theme_C{
+         flex-direction: row;
+        
+     }
+     #theme_A .configColumn  , #theme_B .configColumn, #tds .configColumn, #theme_C .configColumn{
+         max-width: 560px;
+         width: 560px;
+       }
+ }
+ @media screen and (min-width: 1600px) {
+     #theme_A, #theme_B, #tds,#theme_C{
+         flex-direction: row;
+       
+     }
+     #theme_A .configColumn  , #theme_B .configColumn, #tds .configColumn, #theme_C .configColumn{
+         max-width: 560px;
+         width: 560px;
+       }
+ }
+  

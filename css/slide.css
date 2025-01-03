@@ -1,0 +1,1689 @@
+
+/* SIDEBAR PRIMARY */
+:root{
+    --modelBgGrey: #f5f4f3; /*#cecece;*/
+    --rightBg:#fff;
+    --fonts-sans: 'Nunito', ui-sans-serif,system-ui,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    --brandColor:#474444;
+    --outline:#d9d9d9;
+    --textWhite:#fff;
+ }
+#sidebarPrimary
+{
+    position: absolute;
+    width: 10vw;
+    height: calc(100vh - 128px);
+    left: 0;
+    background: #ffffff;
+    overflow-y: scroll; 
+    border-right: 1px solid #e7e7e7;
+    overflow-x: hidden;
+    z-index: 999;
+    height: calc(100vh - 100px);
+
+}
+.innerOptions_style {
+    width: calc(100% - 10vw);
+    left: 10vw;
+    display: block;
+    height: 100%;
+    position: absolute;
+}
+#sidebarPrimary > ul
+{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+#sidebarPrimary > ul > li.navButton
+{
+    width: 100%;
+    margin-top: 0rem;
+   margin-bottom: .5rem;
+   text-transform: capitalize;
+    border-bottom: 1px solid #cecece;
+    color: #173051;
+    -webkit-transition: all 300ms ease-in-out;
+    -moz-transition: all 300ms ease-in-out;
+    -ms-transition: all 300ms ease-in-out;
+    -o-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out;
+   border-left: 4px solid #00000000;
+}
+#theme_B #sidebarPrimary > ul > li.navButton
+{
+
+   height: auto;
+
+}
+li.link.active {
+    border-left: 4px solid;
+    padding-left: 0!important;
+}
+
+#sidebarPrimary > ul > li.navButton > a,
+#sidebarPrimary > ul > li.navButton > a:focus
+{    position: relative;
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    width: 100%;
+    height: 100%;
+    color: #333333;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+    padding: .5rem 0rem;
+}
+#sidebarPrimary > ul > li.navButton.active > a
+{
+    color: #333333;
+}
+#sidebarPrimary > ul > li.navButton:hover
+{
+    text-decoration: none;
+     border-bottom: 1px solid #004771;
+
+}
+#sidebarPrimary > ul > li.navButton > a span
+{
+    display: block;
+    text-align: center;
+    margin-bottom: 5px;
+}
+.navButtonContent img {
+    float: left;
+    width: 50px;
+    height: 50px;
+    display: block;
+}
+.navButtonContent h5 {
+    float: left;
+    display: block;
+    padding: 4px 6px;
+    font-size: 12px;
+    transform: translate(4px, 4px);
+    color: #585353;
+}
+/* SUBMENU */
+
+.submenu
+{
+    width: 100%;
+    /* width: calc(100% - 12vw); */
+    position: absolute;
+    height: calc(100vh - 100px);
+    overflow-y: scroll;
+    left: 0;
+    transform: translateX(-300px);
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.6s ease;
+    -moz-transition: all 0.6s ease;
+    z-index: 98;
+    margin-top: 0;
+    background: #fff;
+    display: none;
+}
+
+.submenu.submenu-open
+{
+    transform: translateX(0);
+        z-index: 99;
+        left: 0;
+        background: #fff;
+        display: block !important;
+}
+
+.submenu.close
+{
+    transform: translateX(-300px);
+}
+
+.submenu > ul.submenuGroup
+
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 25px 0;
+    border-bottom: 2px solid #232731;
+}
+
+.submenu > ul.submenuGroup:first-of-type
+{
+    padding-top: 0;
+}
+
+.submenu > ul.submenuGroup:last-of-type
+{
+    border: none;
+}
+
+.submenu > ul.submenuGroup > li.navButtonSub
+{
+    width: 100%;
+    height: 50px;
+}
+
+.submenu > ul.submenuGroup > li.navButtonSub > a
+{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    font-size: 12px;
+    font-weight: 600;
+    color: #687381;
+    text-decoration: none;
+}
+
+.submenu > ul.submenuGroup > li.navButtonSub.active > a
+{
+    color: #fff;
+}
+
+.submenu > ul.submenuGroup > li.navButtonSub > a:hover
+{
+    color: #fff;
+    background: #1D202B;
+}
+
+.ja_list{
+    display: block;
+}
+
+.waist_list{
+    display: none;
+}
+
+
+.pant_list{
+    display: none;
+}
+.button_list{
+    display: none;
+}
+.contra_list{
+    display: block;
+}
+/* MAIN */
+
+main
+{
+    min-height: 120vh;
+    width: 100%;
+    padding-left: 5vw;
+    background: #F4F7FA;
+}
+/*sidebar for accent*/
+
+/* SIDEBAR SECONDARY */
+
+#sidebarSecondary
+{
+    position: absolute;
+    width: 10vw;
+    height: 100%;
+    height: calc(100vh - 128px);
+    top: 0;
+    left: 0;
+    background: #ffffff;
+    z-index: 991;
+    overflow-y: scroll;
+  
+    border-right: 1px solid #e7e7e7;
+    overflow-x: hidden;
+
+}
+#sidebarSecondary > ul
+{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+#sidebarSecondary > ul > li.navButton
+{
+    width: 100%;
+    margin-top: 0rem;
+    margin-bottom: .5rem;
+    text-transform: capitalize;
+    border-bottom: 1px solid #cecece;
+    color: #173051;
+    -webkit-transition: all 300ms ease-in-out;
+    -moz-transition: all 300ms ease-in-out;
+    -ms-transition: all 300ms ease-in-out;
+    -o-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out;
+    border-left: 4px solid #00000000;
+}
+
+
+
+li.link.active {
+    border-left: 4px solid;
+    padding-left: 0!important;
+}
+
+#sidebarSecondary > ul > li.navButton > a,
+#sidebarSecondary > ul > li.navButton > a:focus
+{     
+    position: relative;
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    width: 100%;
+    height: 100%;
+    color: #333333;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+    padding: .5rem 0rem;
+}
+
+#sidebarSecondary > ul > li.navButton.active > a
+{
+    color: #333333;
+}
+
+#sidebarSecondary > ul > li.navButton > a:hover
+{
+    text-decoration: none;  
+     border-bottom: 1px solid #004771;
+
+}
+
+#sidebarSecondary > ul > li.navButton > a span
+{
+    display: block;
+    text-align: center;
+    margin-bottom: 5px;
+}
+.navButtonContent img {
+    float: left;
+    width: 50px;
+    height: 50px;
+    display: block;
+}
+
+
+.navButtonContent h5 {
+    float: left;
+    display: block;
+    padding: 4px 6px;
+    font-size: 1.5rem;
+    transform: translate(4px, 4px);
+    color: var(--brandColor)
+    ;
+}
+/*submenu2 statrt*/
+/* SUBMENU2 */
+
+.submenu2
+{
+    width: 100%;
+    position: absolute;
+    /* height: calc(100vh - 140px); */
+    top: 0;
+    overflow-y: scroll;
+    transform: translateX(-300px);
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.6s ease;
+    -moz-transition: all 0.6s ease;  
+    margin-top: 0;
+    background: #fff;
+}
+
+.submenu2.submenu-open
+{
+    transform: translateX(0);
+        z-index: 99;
+        left: 0;
+        background: #fff;
+        display: block!important;
+}
+
+.submenu2.close
+{
+    transform: translateX(-300px);
+}
+
+.submenu2 > ul.submenuGroup
+
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 25px 0;
+    border-bottom: 2px solid #232731;
+}
+
+.submenu2 > ul.submenuGroup:first-of-type
+{
+    padding-top: 0;
+}
+
+.submenu2 > ul.submenuGroup:last-of-type
+{
+    border: none;
+}
+
+.submenu2 > ul.submenuGroup > li.navButtonSub
+{
+    width: 100%;
+    height: 50px;
+}
+
+.submenu2 > ul.submenuGroup > li.navButtonSub > a
+{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    font-size: 12px;
+    font-weight: 600;
+    color: #687381;
+    text-decoration: none;
+}
+
+.submenu2 > ul.submenuGroup > li.navButtonSub.active > a
+{
+    color: #fff;
+}
+
+.submenu2 > ul.submenuGroup > li.navButtonSub > a:hover
+{
+    color: #fff;
+    background: #1D202B;
+}
+
+/*side bar for accent finish*/
+
+/* SUBMENU2 */
+
+.submenufabric
+{
+    position: absolute;
+    width: 100%;
+    height: calc(100vh - 140px);
+    top: 23px;
+    overflow-y: scroll;
+    left: -24vw;
+    transform: translateX(-300px);
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.6s ease;
+    -moz-transition: all 0.6s ease;
+    z-index: 8;
+    margin-top: 20px;
+    background: #fff;
+}
+
+.submenufabric.submenu-open
+{
+    transform: translateX(0);
+        z-index: 99;
+        left: 0vw;
+        background: #fff;
+            height: 100%;
+}
+
+
+
+
+@media only screen and (max-width: 600px) {
+
+#sidebarPrimary
+{
+    position: fixed;
+    width: 28vw;
+    height: 100%;
+    height: calc(100vh - 7rem);
+    top: 6rem;
+    left: 0;
+    background: #ffffff;
+    z-index: 991;
+    overflow-y: scroll;
+    height: 100vh;
+}
+
+
+#sidebarPrimary > ul
+{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+#sidebarPrimary > ul > li.navButton
+{
+    width: 100%;
+    margin-top: 0rem;
+    margin-bottom: .5rem;
+    height: 90PX;
+    text-transform: uppercase;
+    border-bottom: 1px solid #e7e7e7;
+    color: #173051;
+    -webkit-transition: all 300ms ease-in-out;
+    -moz-transition: all 300ms ease-in-out;
+    -ms-transition: all 300ms ease-in-out;
+    -o-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out;
+}
+
+li.link.active {
+    border-bottom: 2px solid !important;
+    padding-left: 0!important;
+    border-left:none;
+}
+
+
+
+#sidebarPrimary > ul > li.navButton > a,
+#sidebarPrimary > ul > li.navButton > a:focus
+{   position: relative;
+    display: flex;
+    align-items: left;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    color: #333333;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;  
+    padding-top: 0px;
+    text-align: center;
+    background: #ffffff;
+    padding: .5rem 0rem;
+}
+
+#sidebarPrimary > ul > li.navButton.active > a
+{
+    color: #333333;
+}
+
+#sidebarPrimary > ul > li.navButton > a:hover
+{
+    text-decoration: none;
+  
+     margin-bottom: 1rem;
+     border-bottom: 1px solid #004771;
+
+}
+
+#sidebarPrimary > ul > li.navButton > a span
+{
+    display: block;
+    text-align: center;
+    margin-bottom: 5px;
+}
+.navButtonContent img {
+    float: left;
+    width: 50px;
+    height: 50px;
+    display: block;
+        position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-48%, -60%);
+}
+
+
+.navButtonContent h5 {
+    float: left;
+    display: block;
+    padding: 4px 6px;
+    font-size: 12px;
+  
+}
+.navButtonContent h5 {
+ float: left;
+    display: block; 
+    font-size: 10px;
+    transform: translate(4px, 56px);
+    width: 92px;
+    display: block;   
+    text-align: center;
+    justify-content: center;
+}
+
+/* SUBMENU */
+
+.submenu
+{
+    width: 98%;
+    position: fixed;
+      height: 100%;
+    left: 9vw;
+    transform: translateX(-300px);
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    z-index: 98;
+    
+    background: #fff;
+}
+
+.submenu.submenu-open
+{
+    transform: translateX(0);
+    z-index: 999;
+       left: 28vw;
+
+    background: white;
+}
+
+
+.submenu.close
+{
+    transform: translateX(-300px);
+}
+
+.submenu > ul.submenuGroup
+
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 25px 0;
+    border-bottom: 2px solid #232731;
+}
+
+.submenu > ul.submenuGroup:first-of-type
+{
+    padding-top: 0;
+}
+
+.submenu > ul.submenuGroup:last-of-type
+{
+    border: none;
+}
+
+.submenu > ul.submenuGroup > li.navButtonSub
+{
+    width: 100%;
+    height: 50px;
+}
+
+.submenu > ul.submenuGroup > li.navButtonSub > a
+{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    font-size: 12px;
+    font-weight: 600;
+    color: #687381;
+    text-decoration: none;
+}
+
+.submenu > ul.submenuGroup > li.navButtonSub.active > a
+{
+    color: #fff;
+}
+
+.submenu > ul.submenuGroup > li.navButtonSub > a:hover
+{
+    color: #fff;
+    background: #1D202B;
+}
+
+.ja_list{
+    display: block;
+}
+
+.waist_list{
+    display: none;
+}
+
+
+.pant_list{
+    display: none;
+}
+
+/*sidebar secondar for accents*/
+#sidebarSecondary
+{
+position: fixed;
+    width: 28vw;
+    height: 100%;
+    height: calc(100vh - 128px);
+       top: 11rem;
+    left: 0;
+    background: #ffffff;
+    z-index: 991;
+    overflow-y: scroll;
+/*       padding: 2px 2px 0 0px;*/
+       height: 100vh;
+}
+
+
+#sidebarSecondary > ul
+{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+#sidebarSecondary > ul > li.navButton
+{
+    width: 100%;
+    margin-top: 0rem;
+    margin-bottom: .5rem;
+    height: 90PX;
+    text-transform: uppercase;
+    border-bottom: 1px solid #e7e7e7;
+    color: #173051;
+    -webkit-transition: all 300ms ease-in-out;
+    -moz-transition: all 300ms ease-in-out;
+    -ms-transition: all 300ms ease-in-out;
+    -o-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out;
+}
+
+
+
+
+#sidebarSecondary > ul > li.navButton > a,
+#sidebarSecondary > ul > li.navButton > a:focus
+{   position: relative;
+    display: flex;
+    align-items: left;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    color: #333333;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+    /* padding-left: 20px; */
+    padding-top: 0px;
+    text-align: center;
+        background: #ffffff;
+/*background: #f7f7f7;*/
+    padding-left: 0;
+
+}
+
+#sidebarSecondary > ul > li.navButton.active > a
+{
+    color: #333333;
+}
+
+#sidebarSecondary > ul > li.navButton > a:hover
+{
+    text-decoration: none;
+  
+     margin-bottom: 1rem;
+     border-bottom: 1px solid #004771;
+
+}
+
+#sidebarSecondary > ul > li.navButton > a span
+{
+    display: block;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+
+/* SUBMENU */
+
+.submenu2
+{
+    width: 100%;
+    position: fixed;
+    height: 100%;
+    top: 11rem;
+    left: 9vw;
+    transform: translateX(-300px);
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    z-index: 98;
+    margin-top: 20px;
+    background: #fff;
+}
+
+.submenu2.submenu-open
+{
+    transform: translateX(0);
+    z-index: 999;
+    left: 28vw;
+    background: white;
+}
+
+
+.submenu2.close
+{
+    transform: translateX(-300px);
+}
+
+.submenu2 > ul.submenuGroup
+
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 25px 0;
+    border-bottom: 2px solid #232731;
+}
+
+.submenu2 > ul.submenuGroup:first-of-type
+{
+    padding-top: 0;
+}
+
+.submenu2 > ul.submenuGroup:last-of-type
+{
+    border: none;
+}
+
+.submenu2 > ul.submenuGroup > li.navButtonSub
+{
+    width: 100%;
+    height: 50px;
+}
+
+.submenu2 > ul.submenuGroup > li.navButtonSub > a
+{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    font-size: 12px;
+    font-weight: 600;
+    color: #687381;
+    text-decoration: none;
+}
+
+.submenu2 > ul.submenuGroup > li.navButtonSub.active > a
+{
+    color: #fff;
+}
+
+.submenu2 > ul.submenuGroup > li.navButtonSub > a:hover
+{
+    color: #fff;
+    background: #1D202B;
+}
+
+
+/*sidebar secoday ends*/
+
+
+/* MAIN */
+
+main
+{
+    min-height: 120vh;
+    width: 100%;
+    padding-left: 5vw;
+    background: #F4F7FA;
+}
+
+}
+
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait) {
+
+#sidebarPrimary
+{
+position: fixed;
+   width: 26vw;
+    height: 100%;
+        height: calc(100vh - 128px);
+        top: 72px;
+    left: 0;
+    background: #ffffff;
+    z-index: 991;
+
+}
+#sidebarPrimary > ul
+{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+#sidebarPrimary > ul > li.navButton
+{
+    width: 100%;
+    margin-top: 0rem;
+       margin-bottom: .5rem;
+   height: 60PX;
+    text-transform: uppercase;
+    border-bottom: 1px solid #e7e7e7;
+    color: #173051;
+    -webkit-transition: all 300ms ease-in-out;
+    -moz-transition: all 300ms ease-in-out;
+    -ms-transition: all 300ms ease-in-out;
+    -o-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out;
+
+}
+
+li.link.active {
+    border-left: 4px solid;
+    padding-left: 0!important;
+}
+
+
+#sidebarPrimary > ul > li.navButton > a,
+#sidebarPrimary > ul > li.navButton > a:focus
+{    position: relative;
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    width: 100%;
+    height: 100%;
+    color: #333333;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+    padding: .5rem 0rem;
+}
+
+#sidebarPrimary > ul > li.navButton.active > a
+{
+    color: #333333;
+}
+
+#sidebarPrimary > ul > li.navButton > a:hover
+{
+    text-decoration: none;
+  
+     margin-bottom: 1rem;
+     border-bottom: 1px solid #004771;
+
+}
+
+#sidebarPrimary > ul > li.navButton > a span
+{
+    display: block;
+    text-align: center;
+    margin-bottom: 5px;
+}
+.navButtonContent img {
+    float: left;
+    width: 50px;
+    height: 50px;
+    display: block;
+}
+
+
+.navButtonContent h5 {
+    float: left;
+    display: block;
+    padding: 4px 6px;
+    font-size: 12px;
+    transform: translate(4px, 4px);
+    color: #585353;
+}
+
+/* SUBMENU */
+
+.submenu
+{
+       width: 73%;
+    position: fixed;
+    height: calc(100vh - 140px);
+    top: 82px;
+    overflow-y: scroll;
+    left: 10vw;
+    transform: translateX(-300px);
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.6s ease;
+    -moz-transition: all 0.6s ease;
+    z-index: 98;
+    margin-top: 20px;
+    background: #fff;
+}
+
+.submenu.submenu-open
+{
+    transform: translateX(0);
+        z-index: 99;
+        left: 26.2vw;
+        background: #fff;
+}
+
+.submenu.close
+{
+    transform: translateX(-300px);
+}
+
+.submenu > ul.submenuGroup
+
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 25px 0;
+    border-bottom: 2px solid #232731;
+}
+
+.submenu > ul.submenuGroup:first-of-type
+{
+    padding-top: 0;
+}
+
+.submenu > ul.submenuGroup:last-of-type
+{
+    border: none;
+}
+
+.submenu > ul.submenuGroup > li.navButtonSub
+{
+    width: 100%;
+    height: 50px;
+}
+
+.submenu > ul.submenuGroup > li.navButtonSub > a
+{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    font-size: 12px;
+    font-weight: 600;
+    color: #687381;
+    text-decoration: none;
+}
+
+.submenu > ul.submenuGroup > li.navButtonSub.active > a
+{
+    color: #fff;
+}
+
+.submenu > ul.submenuGroup > li.navButtonSub > a:hover
+{
+    color: #fff;
+    background: #1D202B;
+}
+
+.ja_list{
+    display: block;
+}
+
+.waist_list{
+    display: none;
+}
+
+
+.pant_list{
+    display: none;
+}
+.button_list{
+    display: none;
+}
+.contra_list{
+    display: block;
+}
+
+
+main
+{
+    min-height: 120vh;
+    width: 100%;
+    padding-left: 5vw;
+    background: #F4F7FA;
+}
+
+/*sidebar for accent*/
+
+/* SIDEBAR SECONDARY */
+
+#sidebarSecondary
+{
+    position: fixed;
+    width: 26vw;
+    height: 100%;
+    top: 11rem;
+    left: 0;
+    background: #ffffff;
+    z-index: 991;
+    overflow-y: scroll;
+    border-right: 1px solid #e7e7e7;
+    overflow-x: hidden;
+
+}
+#sidebarSecondary > ul
+{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+#sidebarSecondary > ul > li.navButton
+{
+    width: 100%;
+    margin-top: 0rem;
+       margin-bottom: .5rem;
+   height: 60PX;
+    text-transform: uppercase;
+    border-bottom: 1px solid #e7e7e7;
+    color: #173051;
+    -webkit-transition: all 300ms ease-in-out;
+    -moz-transition: all 300ms ease-in-out;
+    -ms-transition: all 300ms ease-in-out;
+    -o-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out;
+
+}
+
+li.link.active {
+    border-left: 4px solid;
+    padding-left: 0!important;
+}
+
+
+
+#sidebarSecondary > ul > li.navButton > a,
+#sidebarSecondary > ul > li.navButton > a:focus
+{    position: relative;
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    width: 100%;
+    height: 100%;
+    color: #333333;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+    padding-left: 6px;
+        padding-top: 0px;
+}
+
+#sidebarSecondary > ul > li.navButton.active > a
+{
+    color: #333333;
+}
+
+#sidebarSecondary > ul > li.navButton > a:hover
+{
+    text-decoration: none;
+  
+     margin-bottom: 1rem;
+     border-bottom: 1px solid #004771;
+
+}
+
+#sidebarSecondary > ul > li.navButton > a span
+{
+    display: block;
+    text-align: center;
+    margin-bottom: 5px;
+}
+.navButtonContent img {
+    float: left;
+    width: 50px;
+    height: 50px;
+    display: block;
+}
+
+
+.navButtonContent h5 {
+    float: left;
+    display: block;
+    padding: 4px 6px;
+    font-size: 14px;
+    transform: translate(4px, 4px);
+    color: #585353;
+}
+/*submenu2 statrt*/
+/* SUBMENU2 */
+
+.submenu2
+{
+   width: 73%;
+    position: fixed;
+    height: calc(100vh - 140px);
+       top: 11rem;
+    overflow-y: scroll;
+    left: 10vw;
+    transform: translateX(-300px);
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.6s ease;
+    -moz-transition: all 0.6s ease;
+    z-index: 98;
+    margin-top: 20px;
+    background: #fff;
+}
+
+.submenu2.submenu-open
+{
+      transform: translateX(0);
+    z-index: 99;
+    left: 26.2vw;
+    background: #fff;
+}
+
+.submenu2.close
+{
+    transform: translateX(-300px);
+}
+
+.submenu2 > ul.submenuGroup
+
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 25px 0;
+    border-bottom: 2px solid #232731;
+}
+
+.submenu2 > ul.submenuGroup:first-of-type
+{
+    padding-top: 0;
+}
+
+.submenu2 > ul.submenuGroup:last-of-type
+{
+    border: none;
+}
+
+.submenu2 > ul.submenuGroup > li.navButtonSub
+{
+    width: 100%;
+    height: 50px;
+}
+
+.submenu2 > ul.submenuGroup > li.navButtonSub > a
+{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    font-size: 12px;
+    font-weight: 600;
+    color: #687381;
+    text-decoration: none;
+}
+
+.submenu2 > ul.submenuGroup > li.navButtonSub.active > a
+{
+    color: #fff;
+}
+
+.submenu2 > ul.submenuGroup > li.navButtonSub > a:hover
+{
+    color: #fff;
+    background: #1D202B;
+}
+
+/*side bar for accent finish*/
+
+/* SUBMENU2 */
+
+.submenufabric
+{
+    position: fixed;   width: 30%;
+    width: 41.6%;
+    height: calc(100vh - 140px);
+    top: 23px;
+    overflow-y: scroll;
+    left: -24vw;
+    transform: translateX(-300px);
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.6s ease;
+    -moz-transition: all 0.6s ease;
+    z-index: 98;
+    margin-top: 20px;
+    background: #fff;
+}
+
+.submenufabric.submenu-open
+{
+    transform: translateX(0);
+        z-index: 99;
+        left: 0vw;
+        background: #fff;
+            height: 100%;
+}
+
+
+}
+
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : landscape) {
+
+#sidebarPrimary
+{
+position: fixed;
+     width: 18vw;
+    height: 100%;
+        height: calc(100vh - 128px);
+top: 100px;
+    left: 0;
+    background: #ffffff;
+    z-index: 991;
+    overflow-y: scroll;
+ /*   padding: 18px 10px 0 15px;*/
+    border-right: 1px solid #e7e7e7;
+        overflow-x: hidden;
+
+}
+#sidebarPrimary > ul
+{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+#sidebarPrimary > ul > li.navButton
+{
+    width: 100%;
+    margin-top: 0rem;
+       margin-bottom: .5rem;
+   height: 60PX;
+    text-transform: uppercase;
+    border-bottom: 1px solid #e7e7e7;
+    color: #173051;
+    -webkit-transition: all 300ms ease-in-out;
+    -moz-transition: all 300ms ease-in-out;
+    -ms-transition: all 300ms ease-in-out;
+    -o-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out;
+}
+
+li.link.active {
+    border-left: 4px solid;
+    padding-left: 0!important;
+}
+
+
+#sidebarPrimary > ul > li.navButton > a,
+#sidebarPrimary > ul > li.navButton > a:focus
+{    position: relative;
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    width: 100%;
+    height: 100%;
+    color: #333333;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+    padding-left: 6px;
+    padding-top: 0px;
+}
+
+#sidebarPrimary > ul > li.navButton.active > a
+{
+    color: #333333;
+}
+
+#sidebarPrimary > ul > li.navButton > a:hover
+{
+    text-decoration: none;
+  
+     margin-bottom: 1rem;
+     border-bottom: 1px solid #004771;
+
+}
+
+#sidebarPrimary > ul > li.navButton > a span
+{
+    display: block;
+    text-align: center;
+    margin-bottom: 5px;
+}
+.navButtonContent img {
+    float: left;
+    width: 50px;
+    height: 50px;
+    display: block;
+}
+
+
+.navButtonContent h5 {
+    float: left;
+    display: block;
+    padding: 4px 6px;
+    font-size: 12px;
+    transform: translate(4px, 4px);
+    color: #585353;
+}
+
+/* SUBMENU */
+
+.submenu
+{
+       width: 23%;
+    position: fixed;
+    height: calc(100vh - 140px);
+    top: 82px;
+    overflow-y: scroll;
+    left: 10vw;
+    transform: translateX(-300px);
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.6s ease;
+    -moz-transition: all 0.6s ease;
+    z-index: 98;
+    margin-top: 20px;
+    background: #fff;
+}
+
+.submenu.submenu-open
+{
+    transform: translateX(0);
+        z-index: 99;
+       left: 18.2vw;
+        background: #fff;
+}
+
+.submenu.close
+{
+    transform: translateX(-300px);
+}
+
+.submenu > ul.submenuGroup
+
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 25px 0;
+    border-bottom: 2px solid #232731;
+}
+
+.submenu > ul.submenuGroup:first-of-type
+{
+    padding-top: 0;
+}
+
+.submenu > ul.submenuGroup:last-of-type
+{
+    border: none;
+}
+
+.submenu > ul.submenuGroup > li.navButtonSub
+{
+    width: 100%;
+    height: 50px;
+}
+
+.submenu > ul.submenuGroup > li.navButtonSub > a
+{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    font-size: 12px;
+    font-weight: 600;
+    color: #687381;
+    text-decoration: none;
+}
+
+.submenu > ul.submenuGroup > li.navButtonSub.active > a
+{
+    color: #fff;
+}
+
+.submenu > ul.submenuGroup > li.navButtonSub > a:hover
+{
+    color: #fff;
+    background: #1D202B;
+}
+
+.ja_list{
+    display: block;
+}
+
+.waist_list{
+    display: none;
+}
+
+
+.pant_list{
+    display: none;
+}
+.button_list{
+    display: none;
+}
+.contra_list{
+    display: block;
+}
+/* MAIN */
+
+main
+{
+    min-height: 120vh;
+    width: 100%;
+    padding-left: 5vw;
+    background: #F4F7FA;
+}
+
+
+
+
+
+/*sidebar for accent*/
+
+/* SIDEBAR SECONDARY */
+
+#sidebarSecondary
+{
+position: fixed;
+    width: 12vw;
+    height: 100%;
+        height: calc(100vh - 128px);
+    top: 100px;
+    left: 0;
+    background: #ffffff;
+    z-index: 991;
+    overflow-y: scroll;
+ /*   padding: 18px 10px 0 15px;*/
+    border-right: 1px solid #e7e7e7;
+        overflow-x: hidden;
+
+}
+#sidebarSecondary > ul
+{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+#sidebarSecondary > ul > li.navButton
+{
+    width: 100%;
+    margin-top: 0rem;
+       margin-bottom: .5rem;
+   height: 60PX;
+    text-transform: uppercase;
+    border-bottom: 1px solid #e7e7e7;
+    color: #173051;
+    -webkit-transition: all 300ms ease-in-out;
+    -moz-transition: all 300ms ease-in-out;
+    -ms-transition: all 300ms ease-in-out;
+    -o-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out;
+
+}
+
+li.link.active {
+    border-left: 4px solid;
+    padding-left: 0!important;
+}
+
+
+
+
+
+#sidebarSecondary > ul > li.navButton > a,
+#sidebarSecondary > ul > li.navButton > a:focus
+{    position: relative;
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    width: 100%;
+    height: 100%;
+    color: #333333;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+    padding-left: 6px;
+        padding-top: 0px;
+}
+
+#sidebarSecondary > ul > li.navButton.active > a
+{
+    color: #333333;
+}
+
+#sidebarSecondary > ul > li.navButton > a:hover
+{
+    text-decoration: none;
+  
+     margin-bottom: 1rem;
+     border-bottom: 1px solid #004771;
+
+}
+
+#sidebarSecondary > ul > li.navButton > a span
+{
+    display: block;
+    text-align: center;
+    margin-bottom: 5px;
+}
+.navButtonContent img {
+    float: left;
+    width: 50px;
+    height: 50px;
+    display: block;
+}
+
+
+.navButtonContent h5 {
+    float: left;
+    display: block;
+    padding: 4px 6px;
+  font-size: 14px;
+    transform: translate(4px, 4px);
+    color: #585353;
+}
+/*submenu2 statrt*/
+/* SUBMENU2 */
+
+.submenu2
+{
+   width: 30%;
+    position: fixed;
+    height: calc(100vh - 140px);
+       top: 82px;
+    overflow-y: scroll;
+    left: 10vw;
+    transform: translateX(-300px);
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.6s ease;
+    -moz-transition: all 0.6s ease;
+    z-index: 98;
+    margin-top: 20px;
+    background: #fff;
+}
+
+.submenu2.submenu-open
+{
+    transform: translateX(0);
+        z-index: 99;
+        left: 11.2vw;
+        background: #fff;
+}
+
+.submenu2.close
+{
+    transform: translateX(-300px);
+}
+
+.submenu2 > ul.submenuGroup
+
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 25px 0;
+    border-bottom: 2px solid #232731;
+}
+
+.submenu2 > ul.submenuGroup:first-of-type
+{
+    padding-top: 0;
+}
+
+.submenu2 > ul.submenuGroup:last-of-type
+{
+    border: none;
+}
+
+.submenu2 > ul.submenuGroup > li.navButtonSub
+{
+    width: 100%;
+    height: 50px;
+}
+
+.submenu2 > ul.submenuGroup > li.navButtonSub > a
+{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    font-size: 12px;
+    font-weight: 600;
+    color: #687381;
+    text-decoration: none;
+}
+
+.submenu2 > ul.submenuGroup > li.navButtonSub.active > a
+{
+    color: #fff;
+}
+
+.submenu2 > ul.submenuGroup > li.navButtonSub > a:hover
+{
+    color: #fff;
+    background: #1D202B;
+}
+
+/*side bar for accent finish*/
+
+/* SUBMENU2 */
+
+.submenufabric
+{
+    position: fixed;   width: 30%;
+    width: 41.6%;
+    height: calc(100vh - 140px);
+    top: 23px;
+    overflow-y: scroll;
+    left: -24vw;
+    transform: translateX(-300px);
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.6s ease;
+    -moz-transition: all 0.6s ease;
+    z-index: 98;
+    margin-top: 20px;
+    background: #fff;
+}
+.submenufabric.submenu-open
+{
+    transform: translateX(0);
+        z-index: 99;
+        left: 0vw;
+        background: #fff;
+            height: 100%;
+}   
+
+}
